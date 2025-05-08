@@ -1,0 +1,93 @@
+
+.nav {
+    // @include flex;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    &__left {
+        display: flex;
+        width: 100%;
+    }
+    &__left {
+        .nav__left--links {
+            position: relative;
+            font-style: normal;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 25px;
+            color:  darken($color-white, 15%) ;
+            text-transform: uppercase;
+            border-right: 1px solid darken(grey, 30%);
+            border-right
+            &:last-child{
+                border-right: none;
+            }
+            ul {
+                display: none;
+                // background-color: #fff;
+                // color: #2F72A8;
+                font-size: 15px;
+                width: 150%;
+                li {
+                    padding: 10px;
+                    border-bottom: 1px solid ;
+                    border-bottom-color: #dfdfdf;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                   
+                    &:hover {
+                        background-color: #2F72A8;
+                        color: $color-white;
+                        .left--links__text {
+                            color: black;
+                        }
+                    }
+
+                }
+            }
+            span {
+                padding: 10px;
+                &::before {
+                    content: "";
+                    top: 50%;
+                    right: 15px;
+                    
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 3.5px solid transparent;
+                    border-right: 3.5px solid transparent;
+                    border-top: 5px solid white;
+                }
+            }
+            &:hover > {
+                span {
+                    background-color: #2F72A8;
+                    color: white;
+                    cursor: pointer;
+                }
+                ul {
+                    background-color: #fff;
+                    color: #2F72A8;
+                    cursor: pointer;
+                }
+            }
+            &:hover {
+                ul {
+                    position: absolute;
+                    display: block;
+                    text-transform: capitalize;
+                    top: 32px;
+                    &:hover {
+                        + span {
+                            background-color: $color-white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

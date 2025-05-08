@@ -1,0 +1,21 @@
+.header {
+    // display: block;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    background-color: $bg-color-nav-footer;
+    color: $color-whiter-2;
+    &__section {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        .header__logo {
+            margin-right: 27px;
+            &--img {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
