@@ -100,33 +100,36 @@ input {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   position: relative;
   top: -10px;
 }
 .nav__left {
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  width: 56%;
+  box-sizing: border-box;
 }
 .nav__left .nav__left--links {
   position: relative;
   font-style: normal;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   line-height: 25px;
   color: rgb(216.75, 216.75, 216.75);
   text-transform: uppercase;
   border-right: 1px solid rgb(51.5, 51.5, 51.5);
 }
-border-right .nav__left .nav__left--links:last-child {
-  border-right: none;
-}
 .nav__left .nav__left--links ul {
   display: none;
-  font-size: 15px;
+  font-size: 16px;
   width: 150%;
 }
 .nav__left .nav__left--links ul li {
-  padding: 10px;
+  padding: 9px;
+  box-sizing: border-box;
   border-bottom: 1px solid;
   border-bottom-color: #dfdfdf;
 }
@@ -173,6 +176,63 @@ border-right .nav__left .nav__left--links:last-child {
 .nav__left .nav__left--links:hover ul:hover + span {
   background-color: #ffffff;
   color: black;
+}
+.nav__right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 45%;
+  top: -6px;
+}
+.nav__right--top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nav__right--top__selects {
+  display: flex;
+  align-items: center;
+  padding: 0 18px 0 15px;
+  background-color: #001833;
+  cursor: pointer;
+}
+.nav__right--top__selects select {
+  font-size: 12px;
+  padding: 15px 8px 15px 0px;
+  letter-spacing: 0.5px;
+  color: rgb(191.25, 191.25, 191.25);
+  background-color: transparent;
+  border: transparent;
+}
+.nav__right--top__selects select:last-child {
+  margin-left: 20px;
+  padding-left: -10px;
+  padding-right: 0;
+}
+.nav__right--top__selects select:hover {
+  color: #ffffff;
+}
+.nav__right--top__inputs {
+  position: relative;
+  width: 100%;
+  background-color: #1A385A;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+.nav__right--top__inputs input {
+  width: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  color: #585858;
+  border-radius: transparent;
+}
+.nav__right--top__inputs i {
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

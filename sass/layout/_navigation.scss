@@ -1,36 +1,32 @@
 
 .nav {
-    // @include flex;
-    display: flex;
-    align-items: center;
+    @include flex;
     position: relative;
     top: -10px;
     &__left {
-        display: flex;
-        width: 100%;
-    }
-    &__left {
+        @include flex;
+        width: 56%;
+        box-sizing: border-box;
         .nav__left--links {
             position: relative;
             font-style: normal;
-            font-size: 21px;
+            font-size: 20px;
             font-weight: 400;
+            letter-spacing: -0.5px;
             line-height: 25px;
             color:  darken($color-white, 15%) ;
             text-transform: uppercase;
             border-right: 1px solid darken(grey, 30%);
-            border-right
             &:last-child{
-                border-right: none;
+                // border-right: none;
             }
             ul {
                 display: none;
-                // background-color: #fff;
-                // color: #2F72A8;
-                font-size: 15px;
+                font-size: 16px;
                 width: 150%;
                 li {
-                    padding: 10px;
+                    padding: 9px;
+                    box-sizing: border-box;
                     border-bottom: 1px solid ;
                     border-bottom-color: #dfdfdf;
                     &:last-child {
@@ -86,6 +82,64 @@
                             color: black;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 45%;
+        top: -6px;
+        &--top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            &__selects {
+                display: flex;
+                align-items: center;
+                padding: 0 18px 0 15px;
+                background-color: $bg-color-menu;
+                cursor: pointer;
+                select {
+                    font-size: 12px;
+                    padding: 15px 8px 15px 0px;
+                    letter-spacing: 0.5px;
+                    color: darken($color-white, 25%);
+                    background-color: transparent;
+                    border: transparent;
+                    &:last-child {
+                        margin-left: 20px;
+                        padding-left: -10px;
+                        padding-right: 0;
+                    }
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+            &__inputs {
+                position: relative;
+                width: 100%;
+                background-color: $bg-color-search;
+                display: flex;
+                align-items: center;
+                padding: 12px ;
+                input {
+                    width: 100%;
+                    display: inline-block;
+                    color: $color-white;
+                    font-size: 18px;
+                    color: $color-input;
+                    border-radius: transparent;
+                }
+                i {
+                    position: absolute;
+                    font-size: 20px;
+                    right: 10px;
+                    display: inline-block;
                 }
             }
         }
