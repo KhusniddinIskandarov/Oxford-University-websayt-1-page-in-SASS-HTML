@@ -1,0 +1,188 @@
+.news-all {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    .news-all__groups {
+        position: relative;
+        width: 100%;
+        .news-all__group-1 > {
+            width: 60%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            div {
+                @include flex;
+                margin-bottom: 10px;
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-right: 15px;
+                }
+                p {
+                    color: #2F72A8;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline
+                    }
+                }
+            }
+            .cards {
+                @include flex;
+                position: relative;
+                .card {
+                    margin-right: 30px;
+                    width: 24%;
+                    box-sizing: border-box;
+                    height: 340px;
+                    height: 200px;
+                    cursor: pointer;
+                    .image {
+                        @include bg-image;
+                        margin-bottom: 10px;
+                        height: 100%;
+                    }
+                   
+                    &:nth-child(1) {
+                        .image {
+                            background-image: url('/images/Antibiotics 2.jpg');
+                        }
+                        p {
+                            color: grey;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .image {
+                            background-image: url('/images/Radcliffe\ Camera.jpg');
+                        }
+                        p {
+                            color: grey;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .image {
+                            background-image: url('/images/stoneham_360.jpg');
+                        }
+                    }
+                    h2 {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        letter-spacing: -1px;
+                        color: black;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-decoration: none;
+                        color: $color-black;
+                    }
+                    &:hover {
+                        &:nth-child(1) {
+                            .image {
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.55)),url('/images/Antibiotics 2.jpg');
+                            }
+                        }
+                        &:nth-child(2) {
+                            .image {
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.55)),url('/images/Radcliffe\ Camera.jpg');
+                            }
+                        }
+                        &:nth-child(3) {
+                            .image {
+                               background-image: linear-gradient(rgba(0, 0, 0, 0.55)),url('/images/stoneham_360.jpg');
+                            }
+                        }
+                        h2 {
+                            color: $color-dark-red;
+                        }
+                    }
+                }
+            }
+        }
+        .news-all__group-2 {
+            width: 20%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .news-all__group-2 {
+            .events {
+                @include flex;
+                margin-bottom: 10px;
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-right: 15px;
+                }
+                p {
+                    color: #2F72A8;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline
+                    }
+                }
+            }
+            .cards {
+                position: relative;
+                .card {
+                    position: relative;
+                    left: 65px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 50px;
+                    h2 > {
+                        span {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            text-align: center;
+                            left: -70px;
+                            top: 5px;
+                            background-color: $bg-color-nav-footer;
+                            color: $color-white;
+                            font-size: 13px;
+                            font-weight: 300;
+                            padding: 9px 10px 5px;
+                            line-height: 15px;
+                            cursor: default;
+                            span {
+                                &:first-child {
+                                    font-size: 22px;
+                                    font-weight: 500;
+                                    letter-spacing: 2px;
+                                    position: relative;
+                                }
+                            }
+                            small {
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    h2 { cursor: pointer;
+                        font-size: 20px;
+                        font-weight: 600;
+                        &:hover {
+                            color: $color-dark-red;
+                        }
+                    }
+                   
+                    p {
+                        font-size: 18px;
+                        color: $color-black;
+                        line-height: 25px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        cursor: default;
+                    }
+                    small {
+                        color: grey;
+                        font-weight: 400;
+                        font-size: 15px;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
