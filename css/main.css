@@ -123,9 +123,15 @@ input {
   border-right: 1px solid rgb(51.5, 51.5, 51.5);
 }
 .nav__left .nav__left--links ul {
-  display: none;
   font-size: 16px;
+  color: #2F72A8;
   width: 150%;
+  position: absolute;
+  top: 32px;
+  text-transform: capitalize;
+  background-color: #fff;
+  cursor: pointer;
+  display: none;
 }
 .nav__left .nav__left--links ul li {
   padding: 9px;
@@ -140,11 +146,9 @@ input {
   background-color: #2F72A8;
   color: #ffffff;
 }
-.nav__left .nav__left--links ul li:hover .left--links__text {
-  color: black;
-}
 .nav__left .nav__left--links span {
   padding: 10px;
+  cursor: pointer;
 }
 .nav__left .nav__left--links span::before {
   content: "";
@@ -160,20 +164,11 @@ input {
 .nav__left .nav__left--links:hover > span {
   background-color: #2F72A8;
   color: white;
-  cursor: pointer;
 }
 .nav__left .nav__left--links:hover > ul {
-  background-color: #fff;
-  color: #2F72A8;
-  cursor: pointer;
-}
-.nav__left .nav__left--links:hover ul {
-  position: absolute;
   display: block;
-  text-transform: capitalize;
-  top: 32px;
 }
-.nav__left .nav__left--links:hover ul:hover + span {
+.nav__left .nav__left--links:hover > ul:hover + span {
   background-color: #ffffff;
   color: black;
 }
@@ -182,7 +177,7 @@ input {
   flex-direction: column;
   position: relative;
   width: 45%;
-  top: -6px;
+  top: 8px;
 }
 .nav__right--top {
   display: flex;
@@ -192,25 +187,30 @@ input {
 .nav__right--top__selects {
   display: flex;
   align-items: center;
-  padding: 0 18px 0 15px;
   background-color: #001833;
-  cursor: pointer;
 }
-.nav__right--top__selects select {
-  font-size: 12px;
-  padding: 15px 8px 15px 0px;
-  letter-spacing: 0.5px;
+.nav__right--top__selects span:hover {
+  background-color: #00142B;
+}
+.nav__right--top__selects span:hover select {
+  color: #ffffff;
+}
+.nav__right--top__selects span select {
   color: rgb(191.25, 191.25, 191.25);
+  font-size: 12px;
+  padding: 18px 18px 15px 15px;
+  letter-spacing: 0.5px;
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
-.nav__right--top__selects select:last-child {
-  margin-left: 20px;
-  padding-left: -10px;
+.nav__right--top__selects span select:last-child {
+  padding-left: 15px;
   padding-right: 0;
+  margin-right: 20px;
 }
-.nav__right--top__selects select:hover {
-  color: #ffffff;
+.nav__right--top__selects span select:first-child {
+  padding-right: 5px;
 }
 .nav__right--top__inputs {
   position: relative;
@@ -218,21 +218,42 @@ input {
   background-color: #1A385A;
   display: flex;
   align-items: center;
-  padding: 12px;
 }
 .nav__right--top__inputs input {
+  padding: 13px;
   width: 100%;
-  display: inline-block;
   color: #ffffff;
   font-size: 18px;
-  color: #585858;
-  border-radius: transparent;
+  outline: none;
+}
+.nav__right--top__inputs input:focus {
+  color: black;
+  background-color: #fff;
+}
+.nav__right--top__inputs input:focus + i {
+  color: grey;
 }
 .nav__right--top__inputs i {
   position: absolute;
   font-size: 20px;
   right: 10px;
-  display: inline-block;
+  cursor: pointer;
+}
+.nav__right--bottom {
+  margin-left: auto;
+  margin-top: 10px;
+}
+.nav__right--bottom a {
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 15px;
+  color: rgb(191.25, 191.25, 191.25);
+}
+.nav__right--bottom a:last-child {
+  margin-right: 0;
+}
+.nav__right--bottom a:hover {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
