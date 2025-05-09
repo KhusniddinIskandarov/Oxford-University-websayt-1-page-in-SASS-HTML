@@ -418,13 +418,13 @@ input {
   color: #000000;
 }
 .news-all .news-all__groups .news-all__group-1 > .cards .card:hover:nth-child(1) .image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55)), url("/images/Antibiotics 2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38)), url("/images/Antibiotics 2.jpg");
 }
 .news-all .news-all__groups .news-all__group-1 > .cards .card:hover:nth-child(2) .image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55)), url("/images/Radcliffe Camera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38)), url("/images/Radcliffe Camera.jpg");
 }
 .news-all .news-all__groups .news-all__group-1 > .cards .card:hover:nth-child(3) .image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55)), url("/images/stoneham_360.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38)), url("/images/stoneham_360.jpg");
 }
 .news-all .news-all__groups .news-all__group-1 > .cards .card:hover h2 {
   color: #be0f34;
