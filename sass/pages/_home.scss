@@ -1,0 +1,10 @@
+/* oxford colleges section */
+.oxford__colleges {
+    display: block;
+    position: relative;
+    @include bg-image;
+    background-image: linear-gradient(to bottom, transparent, 78%, rgb(0, 0, 0) ),url(/images/steve-langton_spring-at-nuffield_33727903391_o.jpg);
+    min-height: 80vh;
+    color: $color-white;
+    cursor: pointer;
+}

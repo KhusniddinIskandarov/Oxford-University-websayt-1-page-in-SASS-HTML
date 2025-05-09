@@ -8,6 +8,7 @@
         width: 56%;
         box-sizing: border-box;
         .nav__left--links {
+            z-index: 2;
             position: relative;
             font-style: normal;
             font-size: 20px;

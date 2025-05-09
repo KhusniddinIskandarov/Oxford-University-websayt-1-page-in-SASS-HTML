@@ -81,6 +81,86 @@ input {
   margin-bottom: 70px !important;
 }
 
+.oxford__colleges {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.oxford__colleges .toggle-icon {
+  position: absolute;
+  right: 15px;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.oxford__colleges .toggle-icon:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.oxford__colleges .carousel-prev-btn {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 200px;
+}
+.oxford__colleges .carousel-prev-btn i {
+  font-size: 64px;
+  cursor: pointer;
+}
+.oxford__colleges .carousel-prev-btn i:hover {
+  top: 200px;
+  color: rgb(229.5, 229.5, 229.5);
+}
+.oxford__colleges .field-item-single-h2 {
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+  font-size: 33px;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.oxford__colleges .field-item-single-p {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.oxford__colleges .carousel-pager {
+  cursor: default;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.oxford__colleges .carousel-pager button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.oxford__colleges .carousel-pager button:hover {
+  background-color: #fff;
+}
+.oxford__colleges .carousel-pager button:nth-child(2) {
+  background-color: #fff;
+}
+
 .header {
   background-color: #002147;
   color: #E0DED9;
@@ -112,6 +192,7 @@ input {
   box-sizing: border-box;
 }
 .nav__left .nav__left--links {
+  z-index: 2;
   position: relative;
   font-style: normal;
   font-size: 20px;
@@ -254,6 +335,19 @@ input {
 }
 .nav__right--bottom a:hover {
   color: #ffffff;
+}
+
+/* oxford colleges section */
+.oxford__colleges {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to bottom, transparent, 78%, rgb(0, 0, 0)), url(/images/steve-langton_spring-at-nuffield_33727903391_o.jpg);
+  min-height: 80vh;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -14,3 +14,9 @@
     transition: $proparty 0.3s ease;
 }
 
+@mixin bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
