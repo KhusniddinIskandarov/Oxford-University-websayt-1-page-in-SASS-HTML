@@ -1,0 +1,141 @@
+.footer__oxford {
+    background-color: $bg-color-nav-footer;
+    color: $color-white;
+    padding: 20px 0 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        .connect {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.234);
+            margin-bottom: 20px;
+            h2 {
+                font-size: 18px;
+                letter-spacing: 0.5px;
+                margin-right: 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+                cursor: default;
+            }
+            span {
+                i {
+                    display: inline-block;
+                    padding: 10px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    &:nth-child(1) {
+                        background-color: #AA1DD3;
+                        &:hover {
+                            color: #AA1DD3;
+                        }
+                    }
+                    &:nth-child(2) {
+                        background-color: #BE0F34;
+                        &:hover {
+                            color: #BE0F34;
+                        }
+                    }
+                    &:nth-child(3) {
+                        background-color: #000000;
+                        &:hover {
+                            color: #000000;
+                        }
+                    }
+                    &:nth-child(4) {
+                        background-color: #3B5999;
+                        &:hover {
+                            color: #3B5999;
+                        }
+                    }
+                    &:nth-child(5) {
+                        background-color: #000000;
+                        &:hover {
+                            color: #000000;
+                        }
+                    }
+                    &:nth-child(6) {
+                        background-color: #006599;
+                        &:hover {
+                            color: #006599;
+                        }
+                    }
+                    &:nth-child(7) {
+                        background-color: #D62A2A;
+                        &:hover {
+                            color: #D62A2A;
+                        }
+                    }
+                    &:nth-child(8) {
+                        background-color: #517FA4;
+                        &:hover {
+                            color: #517FA4;
+                        }
+                    }
+                    &:nth-child(9) {
+                        background-color: #000000;
+                        &:hover {
+                            color: #000000;
+                        }
+                    }
+                    &:nth-child(10) {
+                        background-color: #D8352A;
+                        &:hover {
+                            color: #D8352A;
+                        }
+                    }
+                    &:hover{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .information {
+            display: flex;
+            .information__card {
+                margin-right: 50px;
+                padding-top: 20px;
+                padding-left: 30px;
+                border-left: 1px solid rgba(128, 128, 128, 0.131);
+                h2 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                    cursor: default;
+                }
+                div {
+                   font-size: 15px;
+                   font-weight: 300;
+                   line-height: 27px; 
+                   letter-spacing: 0.5px;
+                   color: rgba(255, 255, 255, 0.651);
+                   cursor: pointer;
+                   &:hover {
+                    color: white;
+                   }
+                }
+            }
+        }
+        .university__of--oxford {
+            display: flex;
+            margin-top: 50px;
+            border-top: 1px solid rgba(128, 128, 128, 0.204);
+            padding-top: 25px;
+            padding-bottom: 25px;
+            span {
+                margin-right: 10px;
+                font-size: 14px;
+                color: #c7c2bc;
+                cursor: default;
+            }
+            p {
+                margin-left: 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
